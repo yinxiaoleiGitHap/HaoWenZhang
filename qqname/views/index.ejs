@@ -1,0 +1,31 @@
+<% include ./header%>
+	<div class="container">
+		<div class="row">
+			<!-- 循环签名分类 -->
+			<% itemlist.forEach(function(val){ %>
+				<div class="col-md-4">
+					<div class="panel panel-default" id="row">
+						<div class="panel-heading" id="headen">
+							<a href="/qinglv/<%= val._id %>">
+								<%=val.name%>
+							</a>
+						</div>
+						<div class="panel-body">
+							<ol class="imgs" id="contenter">
+								<a href="/qinglv/<%= val._id %>">
+									<!-- 循环签名标题 -->
+									<% val.articleList.forEach(function(val1){ %>
+										<li  class="son">
+											<img src="/<%= val1.imgurl %>">
+											<%- val1.title%>
+										</li>
+									<% })%>
+								</a>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<%})%>
+		</div>
+	</div>
+	<% include ./footer%>

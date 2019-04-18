@@ -1,0 +1,27 @@
+<% include ./header %>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" >
+				<div class="panel panel-default" id="row">
+					<div class="panel-heading" id="headen">
+						<ul id="ulli">
+							<% fenleilist.forEach(function(val2){ %>
+								<a href="/">QQ签名首页</a><li><%= val2.name %><%= val2._id%></li>
+							<% })%>
+						</ul>			
+					</div>
+					<div class="panel-body" id="valcontent">
+						<ol>
+							<!-- 循环签名标题 -->
+							<% contentlist.forEach(function(val1){ %>
+							
+							<li><%- val1.content %></li>
+							<% })%>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<% include ./footer %>

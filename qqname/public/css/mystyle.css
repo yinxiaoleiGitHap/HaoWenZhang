@@ -1,0 +1,75 @@
+li{
+list-style: none;
+}
+body{
+    background: radial-gradient(ellipse,rgb(167, 255, 85) 30%,#ff0 30%,rgb(212, 39, 212));
+
+}
+/* 头部 */
+#header{
+   background:rgb(185, 245, 117);
+   border:1px dashed darkgoldenrod;
+}
+/* 首页图片大小 */
+.imgs img{
+    width:30px;
+    height:30px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 15px;
+}
+.imgs li{
+    line-height: 30px;
+    padding:5px;
+    
+}
+/* 边框 */
+#biaoti li{
+   background:pink;
+   
+  }
+  /* 每个小框的边框 和单个的（内容大框） */
+#row{
+    border:1px dashed rgb(230, 2, 142);
+}
+/*  每个标题的背景色*/
+#headen{
+    background:salmon ;
+}
+
+/* 友情链接标题边框 */
+#youliana{
+    background: darkorange;
+    border:1px dashed rgb(17, 6, 170);
+}
+/* 链接的标题 */
+#youlian li{
+    margin-left: 50px;
+    font-size: 16px;
+
+}
+/* 友情链接最外层 边框 */
+#youlian{
+    background: rgba(74, 245, 6, 0.973);
+    border:1px dashed red;
+
+}
+/* 显示内容 样式 */
+#valcontent{
+    background: radial-gradient(ellipse,rgb(21, 148, 125) 10%,rgb(12, 140, 212) 30%,rgb(212, 140, 212));
+    font-size:18px;
+    color:#fff;
+
+  }
+/* 显示内容的  小标题 */
+
+  #ulli li{
+      font-size: 25px;
+      color:red;
+  }
+  /* 去掉内容的下划线 */
+  #contenter a{
+    text-decoration: none;
+  }
+  
+  
